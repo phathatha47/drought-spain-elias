@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DROUGHT IN SPAIN</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+	<script type="text/javascript">
+		function buscar(){
+				if(document.documentElement.scrollTop == 0){
+					document.getElementsByClassName('subir')[0].style.display="none";
+				}else {
+					document.getElementsByClassName('subir')[0].style.display="block";
+				}
+			}
+			function subir(){
+				window.scroll({
+				  top: 0, 
+				  left: 0, 
+				  behavior: 'smooth' 
+				});
+			}
+	</script>
+</head>
+<body onscroll="buscar()">
+	<div id='content'>
+		<header>
+			<img src="bannerAnimado/banner2.gif" alt="Banner animado de la pagina">
+		</header>
+		<content>
+			<br>
+			<div id='imagenes'>
+				<div>
+					<img src="img/Desierto.jpg" alt="Imagen de desierto" title="En esta imagen se ha eliminado a la persona y adjuntado la marca de agua">
+					Aqui podemos ver un gran desierto. España está en riesgo de ver, cada vez mas, paisajes como este.
+				</div>
+				<div>
+					<img src="img/sequia1.jpg" alt="Primera imagen de sequia" title="En esta imagen se han cambiado los balances de colores, el contraste y el brillo">
+					Esta imagen representa un puente por el que no pasa agua, sintoma de la sequia, problema cada vez mas preocupante en España.	
+				</div>
+				<div>
+					<img src="img/sequia2.jpg" alt="Segunda imagen de sequia" title="Se ha decolorado la imagen">
+					Podemos ver un paisaje árido, otra vez con un puente sin rio como ejemplo. 
+				</div>
+			</div>
+			<br>
+			<br>
+			<hr>
+			<div id="videos">
+				<p>En este video podemos apreciar el</p>
+				<!--Etiqueta video ajustada al ancho y alto deseado. Ademas, añadimos el atributo 'poster' para añadirle una imagen.-->
+				<video width="320" height="240" controls poster="video/poster.jpg">
+					<source src="video/TemperaturaYprecepitacionSigloXXI.mp4" type="video/mp4">
+						Your browser doesn't support this video.
+				</video>
+			</div>
+		</content>
+		<audio controls autoplay loop class="audioFondo">
+			<source src="audio/CreativeCommonsSong.ogg" type="audio/ogg">
+			<source src="audio/CreativeCommonsSong.mp3" type="audio/mp3">
+			<source src="audio/CreativeCommonsSong.aac" type="audio/aac">
+				Your browser doesn't support this audio
+		</audio>
+		<p class="subir" onclick="subir()">Subir</p>
+	</div>
+</body>
+</html>
