@@ -5,20 +5,7 @@
 	<meta charset="UTF-8">
 	<link rel="stylesheet" type="text/css" href="css/estilos.css">
 	<script type="text/javascript">
-		function buscar(){
-				if(document.documentElement.scrollTop == 0){
-					document.getElementsByClassName('subir')[0].style.display="none";
-				}else {
-					document.getElementsByClassName('subir')[0].style.display="block";
-				}
-			}
-			function subir(){
-				window.scroll({
-				  top: 0, 
-				  left: 0, 
-				  behavior: 'smooth' 
-				});
-			}
+		function buscar(){0==document.documentElement.scrollTop?document.getElementsByClassName("subir")[0].style.display="none":document.getElementsByClassName("subir")[0].style.display="block"}function subir(){window.scroll({top:0,left:0,behavior:"smooth"})}
 	</script>
 </head>
 <body onscroll="buscar()">
@@ -34,11 +21,11 @@
 					Aqui podemos ver un gran desierto. España está en riesgo de ver, cada vez mas, paisajes como este.
 				</div>
 				<div>
-					<img src="img/sequia1.jpg" alt="Primera imagen de sequia" title="En esta imagen se han cambiado los balances de colores, el contraste y el brillo">
+					<img src="img/Sequia1.jpg" alt="Primera imagen de sequia" title="En esta imagen se han cambiado los balances de colores, el contraste y el brillo">
 					Esta imagen representa un puente por el que no pasa agua, sintoma de la sequia, problema cada vez mas preocupante en España.	
 				</div>
 				<div>
-					<img src="img/sequia2.jpg" alt="Segunda imagen de sequia" title="Se ha decolorado la imagen">
+					<img src="img/Sequia2.jpg" alt="Segunda imagen de sequia" title="Se ha decolorado la imagen">
 					Podemos ver un paisaje árido, otra vez con un puente sin rio como ejemplo. 
 				</div>
 			</div>
